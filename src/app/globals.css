@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 642px){
+  .navbar a{
+    font-size: 24px;
+    color: #fbbf24;
+    font-weight: 500;
+    transition: .3s;
+  }
+  .navbar{
+      position: absolute !important;
+      top: 100% !important;
+      left: -100% !important;
+      width: 100% !important;
+      padding: 1rem 4% !important;
+      background: #fbbf24 !important;
+      z-index: -1 !important;
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+  }
+  .navbar.active{
+      left: 0 !important;
+      transition-delay: 0s !important;
+  }
+  .navbar .active-nav{
+      position: absolute !important;
+      top: 0 !important;
+      left: -100% !important;
+      width: 100% !important;
+      height: 100% !important;
+      background-color: white !important;
+      border-top: .1rem solid rgba(0, 0, 0, .2) !important;
+      z-index: -1 !important;
+      transition: .25s ease !important;
+      transition-delay: 0s !important;
+  }
+  .navbar.active .active-nav{
+      transition-delay: .25s !important;
+      left: 0 !important;
+  }
+  .navbar {
+      display: flex !important;
+      flex-direction: column !important;
+      height: 400px !important;
+      transition: .25s ease !important;
+  }
+}

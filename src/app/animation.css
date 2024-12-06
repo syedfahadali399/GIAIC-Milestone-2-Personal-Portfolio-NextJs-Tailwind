@@ -1,0 +1,109 @@
+.animation-left {
+    animation: slideleft 2s 0.05s 1 ease-in;
+    transition: all 3s;
+}
+
+@keyframes slideleft {
+    from {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 100;
+    }
+}
+
+.animation-right {
+    animation: slideright 2s 0.05s 1 ease-in;
+    transition: all 3s;
+}
+
+@keyframes slideright {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 100;
+    }
+}
+
+.animation-up {
+    animation: up 1.5s 0.05s 1 ease-in forwards;
+    transition: all 2s;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.animation-down {
+    animation: down 1.5s 0.05s 1 ease-in forwards;
+    transition: all 2s;
+}
+
+@keyframes down {
+    from {
+        opacity: 0;
+        transform: translateY(120px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.animation-popup {
+    animation: popup 1.5s 0.05s 1 ease-in forwards;
+    animation-range: entry 0 cover 60%;
+    animation-timeline: view();
+    transition: 3s;
+}
+
+.animation-popup-2 {
+    animation: popup 1.5s 0.05s 1 ease-in forwards;
+    animation-range: entry 0 cover 50%;
+    animation-timeline: view();
+    transition: 3s;
+}
+
+.animation-popup-3 {
+    animation: popup 1.5s 0.05s 1 ease-in forwards;
+    animation-range: entry 0 cover 40%;
+    animation-timeline: view();
+    transition: 3s;
+}
+
+.animation-popup-4 {
+    animation: popup 1.5s 0.05s 1 ease-in forwards;
+    animation-range: entry 0 cover 30%;
+    animation-timeline: view();
+    transition: 3s;
+}
+
+.animation-popup-5 {
+    animation: popup 1.5s 0.05s 1 ease-in forwards;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view();
+    transition: 3s;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0%;
+        transform: scale(0);
+    }
+    to {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
